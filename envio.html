@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estación de Segregación y Envío - Clasificación por destino y envío final de pedidos en el proceso de fulfillment.">
+  <meta name="keywords" content="segregación, envío, destino, reparto, entrega final">
+  <title>Estación Segregación y Envío - Simulador Fulfillment</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  
+<nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <div id="menu" class="menu-list">
+    <a href="index.html">Inicio</a>
+    <a href="recibo.html">Estación Recibo</a>
+    <a href="qa.html">Estación QA y Asignación</a>
+    <a href="surtido.html">Estación Surtido</a>
+    <a href="buffer.html">Estación Buffer y Embarque</a>
+    <a href="envio.html">Estación Segregación y Envío</a>
+  </div>
+</nav>
+
+<div class="main-content">
+  <h1>Estación Segregación y Envío</h1>
+  <ol>
+    <li>Se segrega por destino o municipio.</li>
+    <li>Se manda a la cortina correspondiente.</li>
+  </ol>
+  <div style="display: flex; gap: 15px; justify-content: center; margin: 10px 0;">
+    <button onclick="location.href='buffer.html'">← Anterior: Estación Buffer y Embarque</button>
+    <button onclick="location.href='index.html'">Volver al inicio</button>
+  </div>
+
+  <div class="imagenes-fila">
+    <div class="imagen-item">
+<img src="img/camion-de-reparto (1).gif" alt="Envío" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+<p>Unidad de reparto</p>
+</div>
+
+<div class="imagen-item">
+<img src="img/seguimiento-de-entrega.gif" alt="Camión saliendo animado" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+<p>Mapa de entrega</p>
+</div>
+</div>
+</div>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>

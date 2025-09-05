@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estación de Recibo - Primera etapa del proceso de fulfillment donde el cliente realiza su pedido en línea.">
+  <meta name="keywords" content="recibo, pedidos, e-commerce, cliente, plataforma online">
+  <title>Estación Recibo - Simulador Fulfillment</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<nav>
+  
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <div id="menu" class="menu-list">
+    <a href="index.html">Inicio</a>
+    <a href="recibo.html">Estación Recibo</a>
+    <a href="qa.html">Estación QA y Asignación</a>
+    <a href="surtido.html">Estación Surtido</a>
+    <a href="buffer.html">Estación Buffer y Embarque</a>
+    <a href="envio.html">Estación Segregación y Envío</a>
+  </div>
+</nav>
+
+<div class="main-content">
+  <h1>Estación Recibo</h1>
+  <ol>
+    <li>El cliente hace su pedido en la plataforma en línea.</li>
+    <li>El área de distribución toma el pedido del cliente.</li>
+  </ol>
+  <div style="display: flex; gap: 15px; justify-content: center; margin: 10px 0;">
+    <button onclick="location.href='index.html'">← Anterior: Inicio</button>
+    <button onclick="location.href='qa.html'">Siguiente: Estación QA y Asignación →</button>
+  </div>
+
+
+  <div class="imagenes-fila">
+    <div class="imagen-item">
+  <img src="img/pedido-en-linea.png" alt="Cliente haciendo pedido" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+  <p>Pedido desde de la APP</p>
+  </div>
+
+  <div class="imagen-item">
+<img src="img/computadora.png" alt="Carrito animado" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+<p>Pedido desde la Web</p>
+</div>
+</div>
+</div>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>

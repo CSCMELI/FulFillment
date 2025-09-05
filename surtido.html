@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estación de Surtido - Proceso de preparación y empaque de pedidos con escaneo de códigos UPC.">
+  <meta name="keywords" content="surtido, empaque, UPC, escáner, preparación pedidos">
+  <title>Estación Surtido - Simulador Fulfillment</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <div id="menu" class="menu-list">
+    <a href="index.html">Inicio</a>
+    <a href="recibo.html">Estación Recibo</a>
+    <a href="qa.html">Estación QA y Asignación</a>
+    <a href="surtido.html">Estación Surtido</a>
+    <a href="buffer.html">Estación Buffer y Embarque</a>
+    <a href="envio.html">Estación Segregación y Envío</a>
+  </div>
+</nav>
+
+<div class="main-content">
+  <h1>Estación Surtido</h1>
+  <ol>
+    <li>El surtidor revisa su pantalla de asignación, cuando ve que ya tiene asignado empieza su surtido.</li>
+    <li>El surtidor revisa que coincida la ubicación contra el UPC, lo escanea y se le genera la guía.</li>
+    <li>Una vez que se escanea se imprime la guía y se pega del lado de la caja donde se encuentra el UPC físico.</li>
+    <li>El asociado debe de terminar su Trip.</li>
+  </ol>
+  <div style="display: flex; gap: 15px; justify-content: center; margin: 10px 0;">
+    <button onclick="location.href='qa.html'">← Anterior: Estación QA y Asignación</button>
+    <button onclick="location.href='buffer.html'">Siguiente: Estación Buffer y Embarque →</button>
+  </div>
+
+  <div class="imagenes-fila">
+    <div class="imagen-item">
+  <img src="img/scanner.png" alt="Surtidor" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+  <p>Surtiendo Pedido</p>
+</div>
+</div>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estación Buffer y Embarque - Gestión de carga y facturación de mercancía en el proceso de fulfillment.">
+  <meta name="keywords" content="buffer, embarque, carga, facturación, montacargas, palets">
+  <title>Estación Buffer y Embarque - Simulador Fulfillment</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰ Menú</button>
+  <div id="menu" class="menu-list">
+    <a href="index.html">Inicio</a>
+    <a href="recibo.html">Estación Recibo</a>
+    <a href="qa.html">Estación QA y Asignación</a>
+    <a href="surtido.html">Estación Surtido</a>
+    <a href="buffer.html">Estación Buffer y Embarque</a>
+    <a href="envio.html">Estación Segregación y Envío</a>
+  </div>
+</nav>
+
+<div class="main-content">
+  <h1>Estación Buffer y Embarque</h1>
+  <ol>
+    <li>El asociado se dirige al área de buffer, donde se le crea un load a la mercancía.</li>
+    <li>Posterior el asociado de embarque factura el load.</li>
+  </ol>
+  <div style="display: flex; gap: 15px; justify-content: center; margin: 10px 0;">
+    <button onclick="location.href='surtido.html'">← Anterior: Estación Surtido</button>
+    <button onclick="location.href='envio.html'">Siguiente: Estación Segregación y Envío →</button>
+  </div>
+
+<div class="imagenes-fila">
+    <div class="imagen-item">  
+  <img src="img/monta.jpg" alt="Buffer" style="width:200px; margin:20px auto; display:block;" loading="lazy">
+  <p>Montacargas</p>
+  </div>
+
+
+    <div class="imagen-item">
+    <img src="img/palets.jpg" alt="Buffer" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+    <p>Palets</p>
+    </div>
+
+    <div class="imagen-item">
+  <img src="img/embarques.jpg" alt="Montacargas animado" style="width:300px; margin:20px auto; display:block;" loading="lazy">
+    <p>Area de embarques</p>
+    </div>
+</div>
+</div>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>
